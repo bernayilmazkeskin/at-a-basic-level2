@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 18px;
+}
+.corner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 10px 10px 10px 10px hsl(0, 0%, 90%);
+    border-radius: 20px;
+}
+.right {
+    flex: 1;
+    height: 65vh;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    background-image: linear-gradient(to top, hsla(241, 99%, 46%, 1), hsl(241, 82%, 50%, 0.6));
+}
+.right h3 {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(255, 225, 225, 0.7)
+}
+.right h1 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 800;
+}
+.right p {
+    font-weight: 500;
+    font-size: 13px;
+    color: rgb(255, 225, 225, 0.7);
+}
+.content {
+    color: hsl(0, 0%, 100%);
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-image: linear-gradient(to top, hsla(241, 81%, 54%, 0.1), hsl(256, 72%, 46%, 0.9));
+}
+.content h2 {
+    font-weight: 800;
+    font-size: 45px;
+    margin: 0;
+}
+.content span {
+    color: rgb(255, 225, 225, 0.7);
+    font-size: 14px;
+}
+.left {
+    flex: 1;
+    margin: 15px 20px 0;
+}
+.left h2 {
+    text-align: justify;
+    font-size: 18px;
+}
+.lens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.area {
+    display: flex;
+    align-items: center;
+}
+.images {
+    padding: 0 5px;
+    width: 22px;
+}
+.old {
+    color: hsla(240, 2%, 10%, 0.8);
+    font-weight: 800;
+    font-size: 15px;
+}
+.number {
+    color: hsla(240, 2%, 10%, 0.4);
+}
+.reaction {
+    color: rgb(237, 85, 18, 0.9);
+    background-color: rgb(237, 85, 18, 0.1);
+}
+.memory {
+    color: rgb(245, 218, 38, 0.9);
+    background-color: rgb(245, 217, 38, 0.2);
+}
+.verbal {
+    color: hsla(173, 85%, 37%, 0.6);
+    background-color: hsla(173, 85%, 37%, 0.4);
+}
+.visual {
+    color: hsla(241, 100%, 66%, 0.9);
+    background: hsl(241, 100%, 89%, 0.4);
+    margin-bottom: 30px;
+}
+button {
+    border: none;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    color: hsl(0, 0%, 100%);
+    background: rgb(0, 0, 0, 0.8);
+}
+@media only screen and (max-width:400px){
+    .container{
+        width:300px;
+       flex-direction:column-reverse;
+        
+    }
+}
